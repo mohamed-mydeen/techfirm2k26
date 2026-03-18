@@ -40,7 +40,6 @@ const About = () => {
                 className="btn-primary">
                 <span>Register Now</span>
               </button>
-              
             </div>
           </motion.div>
 
@@ -49,7 +48,7 @@ const About = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-5">
+            className="grid grid-cols-2 gap-3 md:gap-5">
             {stats.map(({ value, label }, i) => (
               <motion.div key={label}
                 initial={{ opacity: 0, y: 20 }}
@@ -57,9 +56,9 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -6 }}
-                className="glass-card p-8 text-center group cursor-default gradient-border">
-                <div className="font-display text-4xl font-bold gradient-text mb-2">{value}</div>
-                <div className="text-sm text-slate-400 font-medium">{label}</div>
+                className="glass-card p-4 md:p-8 text-center group cursor-default gradient-border">
+                <div className="font-display text-2xl md:text-4xl font-bold gradient-text mb-1 md:mb-2 leading-tight">{value}</div>
+                <div className="text-xs md:text-sm text-slate-400 font-medium">{label}</div>
               </motion.div>
             ))}
 
@@ -68,15 +67,15 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.9 }}
               viewport={{ once: true }}
-              className="col-span-2 glass-card p-6 relative overflow-hidden">
+              className="col-span-2 glass-card p-4 md:p-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/10 blur-3xl rounded-full" />
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600/20 to-pink-600/20 border border-violet-500/30 flex items-center justify-center text-2xl shrink-0">
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-violet-600/20 to-pink-600/20 border border-violet-500/30 flex items-center justify-center text-xl md:text-2xl shrink-0">
                   🏆
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-1">Cash Prizes Await!</h3>
-                  <p className="text-sm text-slate-400">Win exciting prizes across all competitive events. Top performers receive certificates and cash rewards.</p>
+                  <h3 className="text-white font-bold mb-0.5 md:mb-1 text-sm md:text-base">Cash Prizes Await!</h3>
+                  <p className="text-xs md:text-sm text-slate-400">Win exciting prizes across all competitive events. Top performers receive certificates and cash rewards.</p>
                 </div>
               </div>
             </motion.div>
