@@ -11,7 +11,7 @@ const coordinators = {
   ],
   students: [
     { name: 'Mr. Esakki Anand', role: 'III – CSBS', type: 'Student Co-ordinator', phone: '+91 88387 90512' },
-    { name: 'Ms. Jane Vasana Rupavathy J', role: 'III – CSBS', type: 'Student Co-ordinator' },
+    { name: 'Ms. Jane Vasana Rubavathy J', role: 'III – CSBS', type: 'Student Co-ordinator' },
   ],
 };
 
