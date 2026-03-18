@@ -70,7 +70,7 @@ const Contact = () => {
             <div className="glass-card p-8 mb-6">
               <h3 className="text-lg font-bold text-white mb-6">Quick Info</h3>
               {[
-                { icon: '📧', label: 'Email', value: 'csbs.techfirm@fxeng.ac.in' },
+                { icon: '📧', label: 'Email', value: 'esakkianand852@gmail.com' },
                 { icon: '📞', label: 'Query Helpline', value: '+91 88387 90512' },
                 { icon: '📍', label: 'Venue', value: 'APJ Auditorium, FXEC' },
                 { icon: '📅', label: 'Date', value: 'March 25, 2026 · 9:30 AM – 4:00 PM' },
