@@ -89,12 +89,7 @@ const Navbar = () => {
           </AnimatePresence>
 
           {/* Register Btn */}
-          <motion.button initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}
-            whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-            className="btn-primary flex items-center gap-2 text-sm py-2.5 px-6">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_ErsEwmcJnvwMgn_fd1-NA49tWMYY0AD0eYNgo1VhooLNkA/viewform"><span>Register Now</span></a>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-          </motion.button>
+          
         </div>
 
         {/* Mobile toggle */}
