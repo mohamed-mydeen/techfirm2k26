@@ -128,14 +128,18 @@ const Hero = () => {
         </motion.div>
 
         {/* CTA Buttons */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.45 }}
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.45 }}
           className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-           
+          <motion.a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd_ErsEwmcJnvwMgn_fd1-NA49tWMYY0AD0eYNgo1VhooLNkA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="btn-primary flex items-center gap-2">
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_ErsEwmcJnvwMgn_fd1-NA49tWMYY0AD0eYNgo1VhooLNkA/viewform"><span>Register Now</span></a>
+            <span>Register Now</span>
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-          </motion.button>
+          </motion.a>
           <Link to="events" smooth duration={600} offset={-80}>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               className="btn-secondary flex items-center gap-2">
