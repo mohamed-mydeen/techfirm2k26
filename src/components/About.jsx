@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '10+', label: 'Events' },
+  { value: '8+', label: 'Events' },
   { value: '₹200', label: 'Reg. Fee' },
   { value: '100+', label: 'Expected Participants' },
   { value: '9:30 AM', label: 'Start Time' },
