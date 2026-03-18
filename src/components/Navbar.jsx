@@ -30,20 +30,6 @@ const Navbar = () => {
     <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? 'py-2 glass-strong' : 'py-6 bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <img src="logooo.png" className="w-28" alt="" />
-        {/* Logo */}
-        {/* <motion.a href="#home" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}
-          className="flex items-center gap-3 cursor-pointer">
-          <div className="relative">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-pink-600 flex items-center justify-center font-display font-bold text-sm glow-purple">
-              TF
-            </div>
-            <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-violet-600/30 to-pink-600/30 blur-md -z-10"></div>
-          </div>
-          <div>
-            <div className="font-display font-700 text-sm tracking-widest text-white">TECH FIRM</div>
-            <div className="text-[9px] font-semibold tracking-[0.3em] text-violet-400 -mt-0.5">2026</div>
-          </div>
-        </motion.a> */}
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-7">
@@ -58,9 +44,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right side — countdown + register */}
+        {/* Right side — countdown only */}
         <div className="hidden lg:flex items-center gap-4">
-          {/* Compact Navbar Countdown — glass-card style like main section */}
           <AnimatePresence>
             {showNavCountdown && !time.ended && (
               <motion.div
@@ -87,9 +72,6 @@ const Navbar = () => {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* Register Btn */}
-          
         </div>
 
         {/* Mobile toggle */}
@@ -101,7 +83,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Compact Countdown for mobile — glass-card style below navbar */}
+      {/* Compact Countdown for mobile */}
       <AnimatePresence>
         {showNavCountdown && !time.ended && scrolled && (
           <motion.div
@@ -143,7 +125,6 @@ const Navbar = () => {
                   {item}
                 </Link>
               ))}
-              <button className="btn-primary mt-2"><span>Register Now</span></button>
             </div>
           </motion.div>
         )}
